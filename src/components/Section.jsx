@@ -6,9 +6,13 @@ const Section = () => {
   const [currentTab, setCurrentTab] = useState('1');
   return (
     <section className='sectionContainer'>
-        div.
-      <Dashboard currentTab={currentTab} setCurrentTab={setCurrentTab} />
-      <Content currentTab={currentTab} setCurrentTab={setCurrentTab} />
+      <div className='sectionHeader'>
+        <Navbar />
+      </div>
+      <div className='sectionMain'>
+        <Dashboard currentTab={currentTab} setCurrentTab={setCurrentTab} />
+        <Content currentTab={currentTab} setCurrentTab={setCurrentTab} />
+      </div>
     </section>
   );
 };
