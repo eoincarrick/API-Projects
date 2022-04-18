@@ -4,32 +4,25 @@ const DataContext = createContext();
 
 export const ApiDataContext = ({ children }) => {
   const [quotes, setQuotes] = useState([]);
-  const URL = process.env.QUOTES_URL_API;
+  const baseURL = 'https://life-purpose-quotes-db.p.rapidapi.com/quotes';
 
-  try {
-    const getQuotes = async () => {
-      const response = await fetch(URL, {
-        method: 'GET',
-        headers: {
-          'X-RapidAPI-Host': process.env.QUOTES_HOST_API,
-          'X-RapidAPI-Key': process.env.QUOTES_API,
-        },
-      });
+  const getQuotes = async () => {
+    const response = await fetch(baseURL, {
+      method: 'GET',
+      headers: {
+        'X-RapidAPI-Host': 'life-purpose-quotes-db.p.rapidapi.com',
+        'X-RapidAPI-Key': 'f01687c65emsheaaef840bfca25dp1de079jsn9678bec10359',
+      },
+    });
 
-      const data = await response.json();
-      setQuotes(data);
-    };
-  } catch (error) {
-    console.log(error);
-  }
+    const data = await response.json();
+    console.log(data);
+    setQuotes(data);
+  };
 
+  console.log(quotes);
   return (
-    <DataContext.Provider
-      value={{
-        quotes,
-        getQuotes,
-      }}
-    >
+    <DataContext.Provider value={{ quotes, getQuotes }}>
       {children}
     </DataContext.Provider>
   );

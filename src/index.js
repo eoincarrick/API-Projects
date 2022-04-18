@@ -9,7 +9,14 @@ const root = ReactDOM.createRoot(document.querySelector('#root'));
 root.render(
   <Router>
     <Routes>
-      <Route path='*' element={<App />} />
+      <Route
+        path='*'
+        element={
+          <ApiDataContext>
+            <App />
+          </ApiDataContext>
+        }
+      />
     </Routes>
   </Router>
 );
