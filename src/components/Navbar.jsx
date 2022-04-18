@@ -22,9 +22,15 @@ const Navbar = () => {
       </div>
       <div className='navbarUl'>
         <ul className='navbarLinks'>
-          <Link className='link' to='/about'>About</Link>
-          <Link className='link' to='/contact'>Contact</Link>
-          <Link className='link' to='/create-account'>Create Account</Link>
+          <Link className='link' to='/about'>
+            About
+          </Link>
+          <Link className='link' to='/contact'>
+            Contact
+          </Link>
+          <Link className='link' to='/create-account'>
+            Create Account
+          </Link>
         </ul>
         <div className='button' onClick={handleMenu}>
           {showMenu ? <FaTimes /> : <FaBars />}
