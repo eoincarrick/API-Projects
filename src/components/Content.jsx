@@ -1,19 +1,18 @@
 import React from 'react';
 import { TabContent } from '../data';
-import { QuotesCard } from './index';
+import { QuotesCard, Hashtags } from './index';
 
 const Content = ({ currentTab }) => {
   return (
-    <div className='contentContainer'>
+    <div className='content'>
       <TabContent identifier='1' currentTab={currentTab}>
-        <div className='content'>
-          <QuotesCard />
-        </div>
+        <QuotesCard />
+        <QuotesCard />
+        <QuotesCard />
+        <QuotesCard />
       </TabContent>
       <TabContent identifier='2' currentTab={currentTab}>
-        <div className='content'>
-          <h1>Eoin Carrick</h1>
-        </div>
+        <Hashtags />
       </TabContent>
     </div>
   );

@@ -6,3 +6,4 @@ export { default as Section } from './Section';
 export { default as Content } from './Content';
 export { default as Search } from './Search';
 export { default as QuotesCard } from './QuotesCard';
+export { default as Hashtags } from './Hashtags';

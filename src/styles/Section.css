@@ -38,8 +38,10 @@
 }
 
 .sectionContent {
-  overflow-y: auto;
+  overflow-y: scroll !important;
   width: 83%;
   height: 84vh;
   padding-inline: 1.5rem;
+  
+  /* background-color: red; */
 }
