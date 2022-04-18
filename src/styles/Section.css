@@ -1,0 +1,18 @@
+.sectionContainer {
+  /*background-color: white;
+  */
+  min-height: 90vh;
+  width: 90%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.1)
+  );
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  z-index: 2;
+  backdrop-filter: blur(1rem);
+}
