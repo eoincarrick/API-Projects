@@ -3,6 +3,7 @@ import '../styles/QuotesCard.css';
 
 const QuotesCard = ({ quotes }) => {
   const { content, originator, tags, url, id } = quotes;
+  console.log(quotes);
   const data = {
     author: 'The AM',
     quote:
@@ -12,19 +13,19 @@ const QuotesCard = ({ quotes }) => {
 
   return (
     <div className='quotesCard'>
-      {/* <p className='quoteContent'>{quote}</p>
-      <span className='quoteAuthor'>--{author}</span>
+      <p className='quoteContent'>{data.quote}</p>
+      <span className='quoteAuthor'>--{data.author}</span>
       <p className='quotesSource'>
         View direct{' '}
         <a
           className='quoteLink'
-          href={sourceURL}
+          href={data.link}
           target='_blank'
           rel='noreferrer'
         >
           source
         </a>
-      </p> */}
+      </p>
     </div>
   );
 };

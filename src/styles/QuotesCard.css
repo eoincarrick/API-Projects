@@ -1,5 +1,3 @@
-.quotesCardContainer {
-}
 .quotesCard {
   background-color: white;
   background: linear-gradient(
@@ -7,9 +5,9 @@
     rgba(255, 255, 255, 0.9),
     rgba(255, 255, 255, 0.1)
   );
-  height: 20rem;
-  width: 20rem;
-  position: absolute;
+  /* height: 20rem;
+  width: 20rem; */
+  width: 100%;
   border-radius: 2rem;
   -webkit-border-radius: 2rem;
   -moz-border-radius: 2rem;

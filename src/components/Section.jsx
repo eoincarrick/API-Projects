@@ -24,7 +24,19 @@ const Section = () => {
         <React.Fragment>
           <TabContent identifier='1' currentTab={currentTab}>
             <Navbar />
-            <div className='content'>{<QuotesCard quotes={quotes} />}</div>
+            <div className='content'>
+              <QuotesCard quotes={quotes} />
+              <QuotesCard quotes={quotes} />
+              <QuotesCard quotes={quotes} />
+              <QuotesCard quotes={quotes} />
+              <QuotesCard quotes={quotes} />
+              <QuotesCard quotes={quotes} />
+              <QuotesCard quotes={quotes} />
+              <QuotesCard quotes={quotes} />
+              <QuotesCard quotes={quotes} />
+              <QuotesCard quotes={quotes} />
+              <QuotesCard quotes={quotes} />
+            </div>
           </TabContent>
           <TabContent identifier='2' currentTab={currentTab}>
             <Navbar />
