@@ -4,13 +4,13 @@ const DataContext = createContext();
 
 export const ApiDataContext = ({ children }) => {
   const [quotes, setQuotes] = useState([]);
-  const baseURL = 'https://life-purpose-quotes-db.p.rapidapi.com/quotes';
+  const baseURL = 'https://quotes15.p.rapidapi.com/quotes/random/';
 
   const getQuotes = async () => {
     const response = await fetch(baseURL, {
       method: 'GET',
       headers: {
-        'X-RapidAPI-Host': 'life-purpose-quotes-db.p.rapidapi.com',
+        'X-RapidAPI-Host': 'quotes15.p.rapidapi.com',
         'X-RapidAPI-Key': 'f01687c65emsheaaef840bfca25dp1de079jsn9678bec10359',
       },
     });

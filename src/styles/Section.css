@@ -37,11 +37,8 @@
   -o-border-radius: 1rem;
 }
 
-.sectionContent {
-  overflow-y: scroll !important;
-  width: 83%;
-  height: 84vh;
-  padding-inline: 1.5rem;
-  
-  /* background-color: red; */
+.content {
+  width: 100%;
+  height: inherit;
+  display: grid;
 }

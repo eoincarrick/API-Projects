@@ -1,18 +1,8 @@
-import React, { useEffect } from 'react';
-import { useDataContext } from '../context/ApiDataContext';
+import React from 'react';
 import '../styles/QuotesCard.css';
 
-const QuotesCard = () => {
-  const {
-    quotes: { quote, author, sourceURL },
-    getQuotes,
-  } = useDataContext();
-  //   console.log(quotes);
-
-  useEffect(() => {
-    getQuotes();
-  }, []);
-
+const QuotesCard = ({ quotes }) => {
+  const { content, originator, tags, url, id } = quotes;
   const data = {
     author: 'The AM',
     quote:
@@ -21,22 +11,20 @@ const QuotesCard = () => {
   };
 
   return (
-    <div className='quotesCardContainer'>
-      <div className='quotesCard'>
-        <p className='quoteContent'>{quote}</p>
-        <span className='quoteAuthor'>--{author}</span>
-        <p className='quotesSource'>
-          View direct{' '}
-          <a
-            className='quoteLink'
-            href={sourceURL}
-            target='_blank'
-            rel='noreferrer'
-          >
-            source
-          </a>
-        </p>
-      </div>
+    <div className='quotesCard'>
+      {/* <p className='quoteContent'>{quote}</p>
+      <span className='quoteAuthor'>--{author}</span>
+      <p className='quotesSource'>
+        View direct{' '}
+        <a
+          className='quoteLink'
+          href={sourceURL}
+          target='_blank'
+          rel='noreferrer'
+        >
+          source
+        </a>
+      </p> */}
     </div>
   );
 };
