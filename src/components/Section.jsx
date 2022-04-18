@@ -10,8 +10,12 @@ const Section = () => {
         <Navbar />
       </div>
       <div className='sectionMain'>
-        <Dashboard currentTab={currentTab} setCurrentTab={setCurrentTab} />
-        <Content currentTab={currentTab} setCurrentTab={setCurrentTab} />
+        <div className='SectionTab'>
+          <Dashboard currentTab={currentTab} setCurrentTab={setCurrentTab} />
+        </div>
+        <div className='sectionContent'>
+          <Content currentTab={currentTab} setCurrentTab={setCurrentTab} />
+        </div>
       </div>
     </section>
   );

@@ -15,4 +15,31 @@
   -o-border-radius: 1rem;
   z-index: 2;
   backdrop-filter: blur(1rem);
+  padding: 1rem;
+}
+
+.sectionMain {
+  width: 100%;
+  display: flex;
+}
+
+.SectionTab {
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  width: 17%;
+  height: 84vh;
+  backdrop-filter: blur(5rem);
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.sectionContent {
+  overflow-y: auto;
+  width: 83%;
+  height: 84vh;
+  padding-inline: 1.5rem;
 }

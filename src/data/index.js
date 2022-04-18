@@ -1,3 +1,4 @@
+import './index.css';
 // Tab Components
 export const Tab = ({ children, identifier, setCurrentTab, currentTab }) => {
   const handleTab = () => {
@@ -6,7 +7,7 @@ export const Tab = ({ children, identifier, setCurrentTab, currentTab }) => {
   return (
     <li
       onClick={handleTab}
-      className={currentTab === identifier ? 'tab active' : '2tab'}
+      className={currentTab === identifier ? 'tab active' : 'tab'}
     >
       {children}
     </li>

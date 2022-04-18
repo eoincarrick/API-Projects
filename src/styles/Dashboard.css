@@ -1,5 +1,56 @@
-/* .tab {
+.dashboard {
+  width: 100%;
+  height: auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 0.3rem;
-} */
+  gap: 1.5rem;
+}
+
+.dashboardHeader {
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+
+.tabContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.dashboardTab {
+  width: 13rem;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  -ms-border-radius: 0.4rem;
+  -o-border-radius: 0.4rem;
+}
+
+.dashboardIcon {
+  margin-inline-end: 1rem;
+  padding: 0.3rem;
+  font-size: 2rem;
+  border-radius: 0.2rem;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
+}
+
+.dashboardTab:hover {
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+
+  backdrop-filter: blur(4rem);
+}
+
+.dashboardTab:hover .dashboardIcon {
+  background-color: #e69c1f;
+}

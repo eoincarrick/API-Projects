@@ -1,0 +1,49 @@
+.navbarContainer {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.navbarHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  width: 7rem;
+}
+
+.navbarUl {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbarLinks {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.link {
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.5);
+}
+.link:hover {
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  display: none;
+}
